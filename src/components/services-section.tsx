@@ -3,16 +3,16 @@ import { services } from "@/lib/constants";
 export function ServicesSection() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8" id="services">
-      <div className="grid gap-10 lg:grid-cols-[0.36fr_0.64fr]">
-        <div className="space-y-4">
+      <div className="space-y-10">
+        <div className="max-w-2xl border-b border-white/8 pb-8">
           <p className="text-xs uppercase tracking-[0.3em] text-white/42">
             Услуги
           </p>
-          <h2 className="font-serif text-4xl text-white md:text-5xl">
-            Лёгкий продакшн. Дорогой результат.
+          <h2 className="mt-4 font-serif text-4xl text-white md:text-5xl">
+            Что я делаю
           </h2>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={service}
@@ -21,7 +21,7 @@ export function ServicesSection() {
               <p className="text-[11px] uppercase tracking-[0.24em] text-white/42">
                 0{index + 1}
               </p>
-              <h3 className="mt-5 font-serif text-2xl text-white">{service}</h3>
+              <h3 className="mt-8 font-serif text-2xl text-white">{service}</h3>
             </div>
           ))}
         </div>
