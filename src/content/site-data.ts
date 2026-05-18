@@ -15,7 +15,7 @@ export const siteConfig = {
   name: "APVIDEO",
   title: "Видеограф и видеомонтажёр",
   description:
-    "Кинематографичное портфолио видеографа и монтажёра: коммерческие ролики, reels, цвет и визуальные истории с дорогой подачей.",
+    "Коммерческие ролики, reels, цвет и визуальные истории с дорогой подачей.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://your-domain.com",
   email: process.env.CONTACT_EMAIL || "pashkadrone@gmail.com",
   instagram: "https://www.instagram.com/pas_hochek/",
@@ -56,15 +56,15 @@ export const projects: ProjectItem[] = [
     featured: true
   },
   {
-    id: "fashion-contrast",
-    title: "Fashion Contrast",
+    id: "Эмбрио",
+    title: "Реклама",
     description:
-      "Fashion reel с плотным монтажом, выразительным чёрным и вниманием к пластике движения.",
+      "Реклама репродуционного центра Эмбрио",
     thumbnail:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
-    videoUrl: "https://www.instagram.com/reel/C4kB7sYI-fashion/",
+    videoUrl: "https://www.instagram.com/reel/DMxRNdUtRRI/",
     platform: "instagram",
-    category: "Цветокоррекция"
+    category: "Коммерция"
   },
   {
     id: "tempo-cut",

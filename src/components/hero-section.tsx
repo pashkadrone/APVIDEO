@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { siteConfig } from "@/lib/constants";
 
-const highlights = ["Коммерция", "Reels", "Цвет", "Монтаж"];
+//const highlights = ["Коммерция", "Reels", "Цвет", "Монтаж"];
 
 export function HeroSection() {
   return (
@@ -18,8 +18,7 @@ export function HeroSection() {
             {siteConfig.name}
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-9 text-white/68 md:text-2xl">
-            {siteConfig.title}. Коммерческие ролики, reels, монтаж и цвет с
-            дорогим визуальным ощущением в каждом кадре.
+            {siteConfig.title}. Коммерческие ролики, reels, монтаж и цвет.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a href="#portfolio">
@@ -30,14 +29,14 @@ export function HeroSection() {
             </a>
           </div>
           <div className="mt-12 flex flex-wrap gap-3">
-            {highlights.map((item) => (
+
               <span
-                key={item}
+                
                 className="rounded-full border border-white/12 bg-white/[0.03] px-4 py-2 text-sm text-white/62"
               >
-                {item}
+              
               </span>
-            ))}
+            
           </div>
         </div>
       </div>
