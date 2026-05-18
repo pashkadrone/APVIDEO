@@ -12,11 +12,11 @@ export function AboutSection() {
         <div className="relative aspect-[4/5]">
           <Image
             alt="Портрет"
-            className="object-cover grayscale"
+            className="object-cover object-center"
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 40vw"
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+            src="/profile.png"
           />
         </div>
       </div>

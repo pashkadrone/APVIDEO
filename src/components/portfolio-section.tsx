@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import type { ProjectItem } from "@/content/site-data";
 import { ProjectCard } from "@/components/project-card";
@@ -13,25 +13,10 @@ export function PortfolioSection({
   categories: readonly string[];
   projects: ProjectItem[];
 }) {
-  const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("");
-  const [debouncedQuery, setDebouncedQuery] = useState("");
-
-  useEffect(() => {
-    const timeout = window.setTimeout(() => {
-      setDebouncedQuery(query.trim().toLowerCase());
-    }, 220);
-
-    return () => window.clearTimeout(timeout);
-  }, [query]);
 
   const filteredProjects = projects.filter((project) => {
-    const matchesCategory =
-      !activeCategory || project.category === activeCategory;
-    const haystack = `${project.title} ${project.description}`.toLowerCase();
-    const matchesQuery = !debouncedQuery || haystack.includes(debouncedQuery);
-
-    return matchesCategory && matchesQuery;
+    return !activeCategory || project.category === activeCategory;
   });
 
   return (
@@ -46,13 +31,13 @@ export function PortfolioSection({
               Портфолио
             </h2>
           </div>
-          <div className="w-full max-w-3xl">
+          <div className="w-full lg:w-auto">
             <SearchFilters
               activeCategory={activeCategory}
               categories={categories}
               onCategoryChange={setActiveCategory}
-              onQueryChange={setQuery}
-              query={query}
+              onQueryChange={() => {}}
+              query=""
             />
           </div>
         </div>

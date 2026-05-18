@@ -1,13 +1,11 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
+const visibleFilters = ["", "Reels"] as const;
+
 export function SearchFilters({
-  categories,
-  query,
   activeCategory,
-  onQueryChange,
   onCategoryChange
 }: {
   categories: readonly string[];
@@ -17,29 +15,13 @@ export function SearchFilters({
   onCategoryChange: (value: string) => void;
 }) {
   return (
-    <div className="space-y-5">
-      <Input
-        aria-label="Поиск проектов"
-        placeholder="Поиск проектов"
-        value={query}
-        onChange={(event) => onQueryChange(event.target.value)}
-      />
-      <div className="flex flex-wrap gap-2">
-        <button
-          className={cn(
-            "rounded-full border px-4 py-2 text-sm transition",
-            !activeCategory
-              ? "border-white/30 bg-white text-black"
-              : "border-white/12 bg-white/5 text-white/70 hover:bg-white/10"
-          )}
-          onClick={() => onCategoryChange("")}
-          type="button"
-        >
-          Все
-        </button>
-        {categories.map((category) => (
+    <div className="flex flex-wrap gap-2 md:justify-end">
+      {visibleFilters.map((category) => {
+        const label = category === "" ? "Все" : category;
+
+        return (
           <button
-            key={category}
+            key={label}
             className={cn(
               "rounded-full border px-4 py-2 text-sm transition",
               activeCategory === category
@@ -49,10 +31,10 @@ export function SearchFilters({
             onClick={() => onCategoryChange(category)}
             type="button"
           >
-            {category}
+            {label}
           </button>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
 }
