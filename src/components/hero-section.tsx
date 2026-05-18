@@ -11,20 +11,20 @@ export function HeroSection() {
 
       <div className="relative mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="animate-fade-up max-w-3xl">
-          <Badge>Premium Visual Storytelling</Badge>
+          <Badge>Кинематографичная визуальная подача</Badge>
           <h1 className="mt-6 font-serif text-5xl leading-none text-white md:text-7xl lg:text-8xl">
             {siteConfig.name}
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/68 md:text-xl">
-            {siteConfig.title}. Branded edits, cinematic reels, commercials, and
-            color-forward storytelling built to feel expensive on every screen.
+            {siteConfig.title}. Коммерческие ролики, reels, монтаж и цвет с
+            дорогим визуальным ощущением в каждом кадре.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a href="#portfolio">
-              <Button>View Projects</Button>
+              <Button>Смотреть работы</Button>
             </a>
             <a href="#contact">
-              <Button variant="outline">Contact</Button>
+              <Button variant="outline">Контакты</Button>
             </a>
           </div>
         </div>
@@ -33,19 +33,19 @@ export function HeroSection() {
           <div className="w-full rounded-[2rem] border border-white/12 bg-white/[0.03] p-4 shadow-soft backdrop-blur">
             <div className="rounded-[1.5rem] border border-white/8 bg-black/60 p-5">
               <p className="text-xs uppercase tracking-[0.3em] text-white/44">
-                Selected Discipline
+                Основной фокус
               </p>
               <div className="mt-8 space-y-4">
                 <div className="flex items-center justify-between border-b border-white/8 pb-3">
-                  <span className="text-white/55">Editing</span>
-                  <span className="text-white">Narrative Pace</span>
+                  <span className="text-white/55">Монтаж</span>
+                  <span className="text-white">Ритм и структура</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-white/8 pb-3">
-                  <span className="text-white/55">Color</span>
-                  <span className="text-white">Luxury Contrast</span>
+                  <span className="text-white/55">Цвет</span>
+                  <span className="text-white">Контраст и глубина</span>
                 </div>
                 <div className="flex items-center justify-between pb-1">
-                  <span className="text-white/55">Format</span>
+                  <span className="text-white/55">Формат</span>
                   <span className="text-white">Social + Commercial</span>
                 </div>
               </div>

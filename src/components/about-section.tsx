@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_35%),linear-gradient(180deg,rgba(255,255,255,0.04),transparent)]" />
         <div className="relative aspect-[4/5]">
           <Image
-            alt="Portrait"
+            alt="Портрет"
             className="object-cover grayscale"
             fill
             priority
@@ -21,15 +21,15 @@ export function AboutSection() {
         </div>
       </div>
       <div className="space-y-6">
-        <Badge>About</Badge>
+        <Badge>Обо мне</Badge>
         <h2 className="font-serif text-4xl text-white md:text-5xl">
-          Built for precise edits, rich contrast, and strong visual rhythm.
+          Точный монтаж, выразительный контраст и сильный визуальный ритм.
         </h2>
         <p className="max-w-2xl text-sm leading-8 text-white/64">
-          I create commercial edits, short-form social content, and cinematic
-          stories with a premium finish. My workflow balances speed, structure,
-          and detail so every frame looks intentional and every cut carries
-          momentum.
+          Я создаю коммерческие ролики, короткий вертикальный контент и
+          кинематографичные истории с чистой, дорогой подачей. Мой подход
+          сочетает скорость, структуру и внимание к деталям, чтобы каждый кадр
+          выглядел собранно и работал на общее впечатление.
         </p>
         <div className="grid gap-4 sm:grid-cols-3">
           {tools.map((tool) => (
@@ -38,7 +38,7 @@ export function AboutSection() {
               className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-5"
             >
               <p className="text-sm uppercase tracking-[0.2em] text-white/46">
-                Tool
+                Софт
               </p>
               <p className="mt-3 text-white">{tool}</p>
             </div>
@@ -46,12 +46,12 @@ export function AboutSection() {
         </div>
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
           <p className="text-xs uppercase tracking-[0.22em] text-white/46">
-            Experience
+            Опыт
           </p>
           <p className="mt-3 text-sm leading-7 text-white/64">
-            Short-form campaigns, branded reels, fashion edits, product
-            storytelling, and polished commercial delivery for creators, studios,
-            and modern businesses.
+            Коммерческие съёмки, брендовые reels, fashion edits, продуктовые
+            ролики и визуальные истории для создателей, студий и современных
+            брендов.
           </p>
         </div>
       </div>

@@ -13,9 +13,9 @@ export type ProjectItem = {
 
 export const siteConfig = {
   name: "APVIDEO",
-  title: "Видеограф & Монтажер",
+  title: "Видеограф и видеомонтажёр",
   description:
-    "Premium cinematic portfolio for modern videography, editing, color, and social-first campaigns.",
+    "Кинематографичное портфолио видеографа и монтажёра: коммерческие ролики, reels, цвет и визуальные истории с дорогой подачей.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://your-domain.com",
   email: process.env.CONTACT_EMAIL || "pashkadrone@gmail.com",
   instagram: "https://www.instagram.com/pas_hochek/",
@@ -24,11 +24,11 @@ export const siteConfig = {
 };
 
 export const categories = [
-  "Commercials",
+  "Коммерция",
   "Reels",
-  "Color Grading",
-  "Music Video",
-  "Motion Design"
+  "Цветокоррекция",
+  "Музыкальные видео",
+  "Моушн-дизайн"
 ] as const;
 
 export const projects: ProjectItem[] = [
@@ -36,7 +36,7 @@ export const projects: ProjectItem[] = [
     id: "spec-reel-2026",
     title: "Spec Reel 2026",
     description:
-      "Fast social-first edit with premium pacing, bold contrast, and a glossy luxury finish.",
+      "Динамичный короткий монтаж с премиальным ритмом, контрастной картинкой и акцентом на дорогую визуальную подачу.",
     thumbnail: "https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
     platform: "youtube",
@@ -47,71 +47,53 @@ export const projects: ProjectItem[] = [
     id: "midnight-commercial",
     title: "Midnight Commercial",
     description:
-      "Short brand film focused on texture, product rhythm, and upscale nighttime atmosphere.",
+      "Короткий коммерческий ролик с акцентом на фактуру, ритм продукта и атмосферу ночной luxury-съёмки.",
     thumbnail:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
     videoUrl: "https://www.instagram.com/reel/C4kB7sYI-example/",
     platform: "instagram",
-    category: "Commercials",
+    category: "Коммерция",
     featured: true
   },
   {
     id: "fashion-contrast",
     title: "Fashion Contrast",
     description:
-      "Color-led fashion reel with tight cuts, sculpted blacks, and premium movement.",
+      "Fashion reel с плотным монтажом, выразительным чёрным и вниманием к пластике движения.",
     thumbnail:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
     videoUrl: "https://www.instagram.com/reel/C4kB7sYI-fashion/",
     platform: "instagram",
-    category: "Color Grading"
+    category: "Цветокоррекция"
   },
   {
     id: "tempo-cut",
     title: "Tempo Cut",
     description:
-      "Music-driven edit designed around punchy transitions and clean visual escalation.",
+      "Музыкальный монтаж, построенный на точном темпе, резких акцентах и чистой визуальной эскалации.",
     thumbnail:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80",
     videoUrl: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
     platform: "youtube",
-    category: "Music Video"
+    category: "Музыкальные видео"
   },
   {
     id: "launch-sequence",
     title: "Launch Sequence",
     description:
-      "Product launch piece with sleek text beats and restrained motion design accents.",
+      "Имиджевый запуск продукта с чистой графикой, выверенными акцентами и сдержанным моушн-дизайном.",
     thumbnail:
       "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=900&q=80",
     videoUrl: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
     platform: "youtube",
-    category: "Motion Design"
+    category: "Моушн-дизайн"
   }
 ];
 
 export const services = [
-  "Video Editing",
-  "Color Grading",
-  "Reels & Social Cuts",
-  "Commercial Campaigns",
-  "Motion Design"
-];
-
-export const testimonials = [
-  {
-    quote:
-      "He makes branded edits feel cinematic without losing performance focus.",
-    author: "Mila V., Creative Producer"
-  },
-  {
-    quote:
-      "Fast turnaround, exceptional pacing, and tasteful color every single time.",
-    author: "Anton K., Founder"
-  },
-  {
-    quote:
-      "The final reel looked expensive, sharp, and immediately publish-ready.",
-    author: "Elena R., Marketing Lead"
-  }
+  "Видеомонтаж",
+  "Цветокоррекция",
+  "Reels и короткие форматы",
+  "Коммерческие ролики",
+  "Моушн-дизайн"
 ];

@@ -3,7 +3,6 @@ import { ContactSection } from "@/components/contact-section";
 import { HeroSection } from "@/components/hero-section";
 import { PortfolioSection } from "@/components/portfolio-section";
 import { ServicesSection } from "@/components/services-section";
-import { TestimonialsSection } from "@/components/testimonials-section";
 import { categories, projects } from "@/lib/constants";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
       <PortfolioSection categories={categories} projects={projects} />
       <AboutSection />
       <ServicesSection />
-      <TestimonialsSection />
       <ContactSection />
     </main>
   );

@@ -51,7 +51,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth" lang="en">
+    <html className="scroll-smooth" lang="ru">
       <body
         className={`${manrope.variable} ${cormorant.variable} bg-background font-sans text-foreground antialiased`}
       >

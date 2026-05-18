@@ -6,10 +6,10 @@ export function ServicesSection() {
       <div className="grid gap-10 lg:grid-cols-[0.36fr_0.64fr]">
         <div className="space-y-4">
           <p className="text-xs uppercase tracking-[0.3em] text-white/42">
-            Services
+            Услуги
           </p>
           <h2 className="font-serif text-4xl text-white md:text-5xl">
-            Lean production. Expensive result.
+            Лёгкий продакшн. Дорогой результат.
           </h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">

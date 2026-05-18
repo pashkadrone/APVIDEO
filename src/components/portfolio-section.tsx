@@ -39,14 +39,14 @@ export function PortfolioSection({
       <div className="grid gap-10 lg:grid-cols-[0.34fr_0.66fr]">
         <div className="space-y-5">
           <p className="text-xs uppercase tracking-[0.3em] text-white/42">
-            Selected Work
+            Избранные работы
           </p>
           <h2 className="max-w-sm font-serif text-4xl text-white md:text-5xl">
-            Embedded portfolio built for zero backend overhead.
+            Портфолио без лишней нагрузки и без хранения видео на сайте.
           </h2>
           <p className="max-w-sm text-sm leading-7 text-white/60">
-            Every project is streamed from YouTube or Instagram. GitHub Pages only
-            ships static HTML, CSS, JS, and your curated content.
+            Все видео открываются через YouTube и Instagram embeds, а сайт
+            остается быстрым, легким и визуально чистым.
           </p>
           <SearchFilters
             activeCategory={activeCategory}
@@ -65,7 +65,7 @@ export function PortfolioSection({
           </div>
           {filteredProjects.length === 0 ? (
             <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-8 text-white/60">
-              No projects matched the current filters.
+              По текущим фильтрам ничего не найдено.
             </div>
           ) : null}
         </div>

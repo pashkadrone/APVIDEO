@@ -2,6 +2,5 @@ export {
   categories,
   projects,
   services,
-  siteConfig,
-  testimonials
+  siteConfig
 } from "@/content/site-data";

@@ -19,8 +19,8 @@ export function SearchFilters({
   return (
     <div className="space-y-5">
       <Input
-        aria-label="Search projects"
-        placeholder="Search projects"
+        aria-label="Поиск проектов"
+        placeholder="Поиск проектов"
         value={query}
         onChange={(event) => onQueryChange(event.target.value)}
       />
@@ -35,7 +35,7 @@ export function SearchFilters({
           onClick={() => onCategoryChange("")}
           type="button"
         >
-          All
+          Все
         </button>
         {categories.map((category) => (
           <button

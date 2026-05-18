@@ -92,7 +92,7 @@ export function ProjectModal({
             transition={{ duration: 0.22, ease: "easeOut" }}
           >
             <button
-              aria-label="Close modal"
+              aria-label="Закрыть"
               className="absolute right-5 top-5 z-10 rounded-full border border-white/12 bg-white/5 p-2 text-white/72 transition hover:bg-white/10"
               onClick={onClose}
               type="button"
@@ -120,7 +120,7 @@ export function ProjectModal({
                         data-instgrm-permalink={project.videoUrl}
                         data-instgrm-version="14"
                       >
-                        <a href={project.videoUrl}>View on Instagram</a>
+                        <a href={project.videoUrl}>Открыть в Instagram</a>
                       </blockquote>
                     </div>
                   ) : null}
@@ -144,7 +144,7 @@ export function ProjectModal({
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Open original link
+                  Открыть оригинал
                 </a>
               </div>
             </div>
